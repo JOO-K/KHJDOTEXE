@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap" rel="stylesheet">
+    <title>BRAIN</title>
+  </head>
+  <body>
+      
+    <div id="info">
+        <h2>
+        Left Click to Rotate | Right Click to Pan | Scroll to Zoom
+        <br>
+        <br>  
+        <br>      
+        </h2>
+       
+        <h1>
+        B R A I N
+        <br>
+        <br>
+        This is a self portrait of myself in the year 2020.
+        <br><br>
+        The faces were scanned and created using 3D Face Reconstruction from a Single Image
+        https://cvl-demos.cs.nott.ac.uk/vrn/.     
+        <br><br>
+        GLTF in Blender.
+        </h1>
+    </div>    
+      
+    <audio controls>
+        <source src="audio/smallcrowd.mp3" type="audio/mp3">
+    </audio>   
+      
+    <div class="scene"></div>
+    <script src=js/three.min.js></script>
+    <script src=js/GLTFLoader.js></script>
+    <script src=js/OrbitControls.js></script>
+    <script src=js/main2.js></script>
+      
+    <iframe src="pdfs/portrait3.pdf" width="100%" height="500px">
+    </iframe>
+      
+  </body>
+</html>
