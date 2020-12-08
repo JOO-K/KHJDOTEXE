@@ -90,16 +90,16 @@ addEventListener('keyup',(e)=>{
 
 function processKeyboard() {
     if(keyboard['w']){
-        controls.moveForward(0.03);
+        controls.moveForward(0.02);
     }
     if(keyboard['s']){
-        controls.moveForward(-0.03);
+        controls.moveForward(-0.02);
     }
     if(keyboard['a']){
-        controls.moveRight(-0.03);
+        controls.moveRight(-0.02);
     }
     if(keyboard['d']){
-        controls.moveRight(0.03);
+        controls.moveRight(0.02);
     }
 }
 
