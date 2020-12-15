@@ -17,7 +17,7 @@ function init() {
 
   //Camera setup    
   const fov = 130;
-  const aspect = container.clientWidth * .8/ container.clientHeight;
+  const aspect = container.clientWidth * .74/ container.clientHeight;
   const near = 0.1;
   const far = 1000;
 
@@ -34,7 +34,7 @@ function init() {
     
   //Renderer
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-  renderer.setSize(container.clientWidth * .8, container.clientHeight * 1.0);
+  renderer.setSize(container.clientWidth * .74, container.clientHeight * 1.0);
   renderer.setPixelRatio(window.devicePixelRatio);
 
   container.appendChild(renderer.domElement);
@@ -65,10 +65,10 @@ function animate() {
 init();
 
 function onWindowResize() {
-  camera.aspect = container.clientWidth * .8/ container.clientHeight;
+  camera.aspect = container.clientWidth * .74/ container.clientHeight;
   camera.updateProjectionMatrix();
 
-  renderer.setSize(container.clientWidth * .8, container.clientHeight);
+  renderer.setSize(container.clientWidth * .74, container.clientHeight);
 }
 
 window.addEventListener("resize", onWindowResize);

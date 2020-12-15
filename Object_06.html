@@ -6,26 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>CARDIO</title>
   </head>
+  
   <body>
+    
+    <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>  
       
+    <script>javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();stats.showPanel( 0 );stats.domElement.style.cssText = 'position:absolute;top:0px;left:0px;';document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()</script>
+    
+    <script>javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();stats.showPanel( 1 );stats.domElement.style.cssText = 'position:absolute;top:0px;left:80px;';document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()</script>
+    
+    <script>javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();stats.showPanel( 2 );stats.domElement.style.cssText = 'position:absolute;top:0px;left:160px;';document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()</script>
+      
+    <div class="rightnav">
     <div id="info">
         <h2>
         Left Click to Rotate | Right Click to Pan | Scroll to Zoom
-        <br>
-        <br>  
-        <br>      
         </h2>
         
         <h1>
-        H E A R T
-        <br><br>
-        A sample of my core/ What my yolk looks like.
+        Cardio
+        </h1>
+        <h3>
+        A sample of my core/ What my yolk looks like.         A sample of my core/ What my yolk looks like.        A sample of my core/ What my yolk looks like.        A sample of my core/ What my yolk looks like.        A sample of my core/ What my yolk looks like.        A sample of my core/ What my yolk looks like.        A sample of my core/ What my yolk looks like.        A sample of my core/ What my yolk looks like.        A sample of my core/ What my yolk looks like.        A sample of my core/ What my yolk looks like.
         <img src="images/coresketch.jpg">
         
-        </h1>
+        </h3>
+        <br>
+        <br>
+        <br>
+        <a href="index.html" target="_self"><h4>HOME </h4></a>
+        <a href="Object_07.html" target="_self"><h4>NEXT </h4></a>
     </div>    
+    </div>
       
     <audio controls>
         <source src="audio/badgag.mp3" type="audio/mp3">
@@ -37,8 +60,6 @@
     <script src=js/OrbitControls.js></script>
     <script src=js/main6.js></script>
       
-    <iframe src="pdfs/EYES.pdf" width="100%" height="500px">
-    </iframe>
-      
+
   </body>
 </html>

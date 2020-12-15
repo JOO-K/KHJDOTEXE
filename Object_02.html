@@ -6,32 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>BRAIN</title>
   </head>
+  
   <body>
       
+    <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>  
+    
+    <script>javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();stats.showPanel( 0 );stats.domElement.style.cssText = 'position:absolute;top:0px;left:0px;';document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()</script>
+    
+    <script>javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();stats.showPanel( 1 );stats.domElement.style.cssText = 'position:absolute;top:0px;left:80px;';document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()</script>
+    
+    <script>javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();stats.showPanel( 2 );stats.domElement.style.cssText = 'position:absolute;top:0px;left:160px;';document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()</script>
+    
+    <div class="rightnav">
     <div id="info">
         <h2>
         Left Click to Rotate | Right Click to Pan | Scroll to Zoom
-        <br>
-        <br>  
-        <br>      
+         
         </h2>
        
         <h1>
-        B R A I N
+        Brain
+        </h1>
         <br>
         <br>
+        <h3>
         This is a self portrait of myself in the year 2020.
         <br><br>
         The faces were scanned and created using 3D Face Reconstruction from a Single Image
         https://cvl-demos.cs.nott.ac.uk/vrn/.     
         <br><br>
         GLTF in Blender.
-        </h1>
-    </div>    
+        </h3>
+        
+        <br>
+        <br>
+        <br>
+        <a href="index.html" target="_self"><h4>HOME </h4></a>
+        <a href="Object_03.html" target="_self"><h4>NEXT </h4></a>
+    </div>   
+    </div>   
       
-    <audio controls autoplay loop>
+    <audio controls loop>
         <source src="audio/smallcrowd.mp3" type="audio/mp3">
     </audio>   
       
@@ -40,9 +66,7 @@
     <script src=js/GLTFLoader.js></script>
     <script src=js/OrbitControls.js></script>
     <script src=js/main2.js></script>
-      
-    <iframe src="pdfs/portrait3.pdf" width="100%" height="500px">
-    </iframe>
+
       
   </body>
 </html>

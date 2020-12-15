@@ -6,21 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>EYES</title>
   </head>
+  
   <body>
-      
+   
+    <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+    
+    <script>javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();stats.showPanel( 0 );stats.domElement.style.cssText = 'position:absolute;top:0px;left:0px;';document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()</script>
+    
+    <script>javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();stats.showPanel( 1 );stats.domElement.style.cssText = 'position:absolute;top:0px;left:80px;';document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()</script>
+    
+    <script>javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();stats.showPanel( 2 );stats.domElement.style.cssText = 'position:absolute;top:0px;left:160px;';document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()</script>
+    
+    <div class="rightnav">
     <div id="info">
         <h2>
-        WASD to move | Mouse to view
-        <br>
-        <br>  
-        <br>      
+        WASD to move | Mouse to view   
         </h2>
         
         <h1>
-        E Y E S
+        Eyes
+        </h1>
         <br><br>
+        <h3>
         This is the streetview of the area around where I lived for the past year. Although
         I had lived in Los Angeles my entire life, it was my first time living alone in the middle of the city.
         The past few years rent in LA has gotten a lot higher and the area I once culturally identified with is now gentrified
@@ -31,10 +49,16 @@
         <img src="images/aptroom.jpg">
         <br><br>
         
-        </h1>
+        </h3>
+        <br>
+        <br>
+        <br>
+        <a href="index.html" target="_self"><h4>HOME </h4></a>
+        <a href="Object_04.html" target="_self"><h4>NEXT </h4></a>
     </div>    
+    </div>
       
-    <audio controls autoplay loop>
+    <audio controls loop>
         <source src="audio/horn.mp3" type="audio/mp3">
     </audio>   
       
@@ -44,9 +68,6 @@
     <script src=js/OrbitControls.js></script>
     <script src=js/PointerLockControls.js></script>
     <script src=js/main3.js></script>
-      
-    <iframe src="pdfs/EYES.pdf" width="100%" height="500px">
-    </iframe>
       
   </body>
 </html>

@@ -15,13 +15,25 @@ function init() {
 
   //Camera setup    
   const fov = 35;
-  const aspect = container.clientWidth * .8/ container.clientHeight;
+  const aspect = container.clientWidth * .74/ container.clientHeight;
   const near = 0.1;
   const far = 1000;
 
   camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
   camera.position.set(0, 0, 80);
   
+  //GridVis
+    
+    const size = 100;
+    const divisions = 100;
+    const colorGrid = '#28d155';
+
+    const gridHelper = new THREE.GridHelper( size, divisions, colorGrid );
+    scene.add( gridHelper );
+    grid = gridHelper;
+ 
+      
+    
   //Light setup
   const ambient = new THREE.AmbientLight(0x404040, 2);
   scene.add(ambient);
@@ -32,7 +44,7 @@ function init() {
     
   //Renderer
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-  renderer.setSize(container.clientWidth * .8, container.clientHeight * 1.0);
+  renderer.setSize(container.clientWidth * .74, container.clientHeight * 1.0);
   renderer.setPixelRatio(window.devicePixelRatio);
 
   container.appendChild(renderer.domElement);
@@ -63,7 +75,8 @@ function init() {
 
 
 function animate() {
-  
+
+  grid.position.y = -10;
   
   face.rotation.y += .005;
   absform.rotation.z += .05;
@@ -78,10 +91,10 @@ function animate() {
 init();
 
 function onWindowResize() {
-  camera.aspect = container.clientWidth * .8/ container.clientHeight;
+  camera.aspect = container.clientWidth * .74/ container.clientHeight;
   camera.updateProjectionMatrix();
 
-  renderer.setSize(container.clientWidth * .8, container.clientHeight);
+  renderer.setSize(container.clientWidth * .74, container.clientHeight);
 }
 
 window.addEventListener("resize", onWindowResize);
