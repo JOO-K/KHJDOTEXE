@@ -20,7 +20,7 @@ function init() {
   const far = 1000;
 
   camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.set(.1, 0, .7);
+  camera.position.set(0, 0, .7);
   
     //GridVis
     
@@ -60,11 +60,11 @@ function init() {
 
 function animate() {
   
-    grid.rotation.x = 180;
+    grid.rotation.x = 80;
     heart.rotation.x = 179.08;
     heart.rotation.z = 0;
-    heart.position.x = -.01;
-    heart.position.y = -.3;
+    heart.position.x = .1;
+    heart.position.y = -.7;
     
     
     
