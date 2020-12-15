@@ -212,6 +212,7 @@ canvas {
     left: 15px;
 	z-index: 100;
 	display:block;
+    padding-bottom: 20px;
 }
 
 #info h1{
