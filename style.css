@@ -162,7 +162,7 @@ img{
 }
 
 .textcontainer .projdescription h3{
-    font-size: 1vw;
+    font-size: .9vw;
     line-height: 1.5vw;
     font-family: "syne";
 }
@@ -230,7 +230,7 @@ canvas {
 
 #info h3{
 	font-family: "syne";
-    font-size: 15px;
+    font-size: 1.6em;
     line-height: 20px;
 }
 
