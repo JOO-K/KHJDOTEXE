@@ -13,7 +13,7 @@ function init() {
 
   //Create scene
   scene = new THREE.Scene();
-  scene.background = new THREE.Color('#de3cd3');
+  scene.background = new THREE.Color('#8cbaff');
 
   //Camera setup    
   const fov = 85;
