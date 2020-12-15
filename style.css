@@ -32,6 +32,16 @@ body{
     src: url("fonts/NeueMachina-Regular.otf") format("opentype");
 }
 
+@font-face {
+    font-family: NeueWorld;
+    src: url("fonts/NeueWorld-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Hatton;
+    src: url("fonts/Hatton-Medium.otf") format("opentype");
+}
+
 .spacer{
     width: 3vw;
     height: 100vh;
@@ -205,8 +215,8 @@ canvas {
 }
 
 #info h1{
-	font-family: "Cirka";
-    font-size: 13em;
+	font-family: "Hatton";
+    font-size: 10em;
     line-height: 20vh;
     letter-spacing: 0px;
     padding-bottom: 30px;
