@@ -62,7 +62,7 @@ function init() {
  
 function animate() {
     
-  grid.position.y = -2;
+  grid.position.y = 0;
   
   camera.position.y = 1.2;
   
